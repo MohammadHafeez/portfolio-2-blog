@@ -1,0 +1,21 @@
+main{
+    margin-top: 95px;
+    padding: 0 225px;
+
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            font-family: var(--poppins);
+            font-size: 30px;
+            font-weight: 300;
+            max-width: 690px;
+
+            span{
+                color: var(--orange);
+            }
+        }
+    }
+}
