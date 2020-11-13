@@ -1,0 +1,21 @@
+footer{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    background-color: #455a64;
+    padding: 20px 0;
+    color: white;
+
+    h2{
+        font-size: clamp(16px, 1.6vw, 20px);
+
+        a{
+            color: white;
+        }
+
+        a:hover{
+            color: #ff4b36;
+        }
+    }
+}

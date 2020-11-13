@@ -24,7 +24,7 @@ a {
 
 @media screen and (min-width: 525px) {
   body {
-    margin: 0 65px;
+    padding: 0 65px;
   }
 }
 
@@ -70,12 +70,6 @@ header nav ul li a {
   font-weight: 300;
   font-size: clamp(16px, 1.5vw, 20px);
   color: black;
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    padding: 0 150px;
-  }
 }
 
 main {
@@ -145,7 +139,7 @@ main section .image__box img {
   grid-gap: 50px;
   -ms-grid-columns: (minmax(345px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
-  margin-top: 35px;
+  margin-top: 50px;
   padding-bottom: 35px;
 }
 
@@ -155,11 +149,13 @@ main section .image__box img {
 
 .grid .card .image__box {
   width: 100%;
+  background-color: #f7f4ff;
+  padding: 10px;
 }
 
 .grid .card .image__box img {
   width: 100%;
-  height: clamp(200px, 25vh, 270px);
+  height: clamp(200px, 26vh, 280px);
 }
 
 .grid .card p {
@@ -180,5 +176,27 @@ main section .image__box img {
   font-family: var(--lora);
   font-weight: 800;
   font-size: clamp(16px, 1.3vw, 20px);
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  background-color: #455a64;
+  padding: 20px 0;
+  color: white;
+}
+
+footer h2 {
+  font-size: clamp(16px, 1.6vw, 20px);
+}
+
+footer h2 a {
+  color: white;
+}
+
+footer h2 a:hover {
+  color: #ff4b36;
 }
 /*# sourceMappingURL=style.css.map */

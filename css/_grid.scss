@@ -2,7 +2,7 @@
     display: grid;
     grid-gap: 50px; 
     grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
-    margin-top: 35px;
+    margin-top: 50px;
     padding-bottom: 35px;
 
     .card{
@@ -10,10 +10,12 @@
 
         .image__box{
             width: 100%;
+            background-color: #f7f4ff;
+            padding: 10px;
 
             img{
                 width: 100%;
-                height: clamp(200px, 25vh, 270px);
+                height: clamp(200px, 26vh, 280px);
             }
         }
 
