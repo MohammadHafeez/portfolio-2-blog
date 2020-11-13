@@ -1,0 +1,40 @@
+.grid{
+    display: grid;
+    grid-gap: 50px; 
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    margin-top: 35px;
+    padding-bottom: 35px;
+
+    .card{
+        cursor: pointer;
+
+        .image__box{
+            width: 100%;
+
+            img{
+                width: 100%;
+                height: clamp(200px, 25vh, 270px);
+            }
+        }
+
+        p{
+            margin-top: 10px;
+            font-family: var(--poppins);
+            font-weight: 700;
+            font-size: clamp(18px, 1.3vw, 22px);
+            color: #242e6c;
+
+            span{
+                font-family: var(--lora);
+                font-weight: 400;
+            }
+        }
+
+        p{
+            margin-top: 10px;
+            font-family: var(--lora);
+            font-weight: 800;
+            font-size: clamp(16px, 1.3vw, 20px);
+        }
+    }
+}

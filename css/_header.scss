@@ -1,12 +1,13 @@
 header{
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    align-items: center;
+    margin-top: 15px;
 
     h1{
         font-family: var(--poppins);
         font-weight: 600;
-        font-size: 24px;
+        font-size: clamp(20px, 1.5vw, 28px);
 
         span{
             color: var(--orange);
@@ -22,9 +23,15 @@ header{
             a{
                 text-decoration: none;
                 font-weight: 300;
-                font-size: 18px;
+                font-size: clamp(16px, 1.5vw, 20px);
                 color: black;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        padding: 0 150px;
     }
 }

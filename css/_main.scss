@@ -1,20 +1,53 @@
 main{
-    margin-top: 95px;
-    padding: 0 225px;
+    margin-top: 25px;
 
     section{
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
+        flex-wrap: wrap;
 
         p{
             font-family: var(--poppins);
-            font-size: 30px;
+            font-size: clamp(20px, 1.6vw, 30px);
             font-weight: 300;
-            max-width: 690px;
-
+            
             span{
                 color: var(--orange);
+            }
+        }
+
+        .image__box{
+            width: 100%;
+            margin-top: 35px;
+            text-align: center;
+
+            img{
+                width: 55%;
+            }
+        } 
+    }
+}
+
+@media screen and (min-width: 968px) {
+    main{
+    
+        section{
+            justify-content: space-around;
+    
+            p{
+                flex: 0.75;
+                max-width: 690px;            
+            }
+    
+            .image__box{
+                display: block;
+                flex:0.25;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     }
