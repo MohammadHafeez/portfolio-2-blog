@@ -1,6 +1,6 @@
 .grid{
     display: grid;
-    grid-gap: 50px; 
+    grid-gap: 30px; 
     grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     margin-top: 50px;
     padding-bottom: 35px;
@@ -12,6 +12,7 @@
             width: 100%;
             background-color: #f7f4ff;
             padding: 10px;
+            border-radius: 10px;
 
             img{
                 width: 100%;

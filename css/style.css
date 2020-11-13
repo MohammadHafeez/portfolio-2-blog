@@ -136,7 +136,7 @@ main section .image__box img {
 .grid {
   display: -ms-grid;
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 30px;
   -ms-grid-columns: (minmax(345px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
   margin-top: 50px;
@@ -151,6 +151,7 @@ main section .image__box img {
   width: 100%;
   background-color: #f7f4ff;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .grid .card .image__box img {
@@ -189,7 +190,8 @@ footer {
 }
 
 footer h2 {
-  font-size: clamp(16px, 1.6vw, 20px);
+  font-size: clamp(15px, 1.6vw, 19px);
+  font-family: var(--poppins);
 }
 
 footer h2 a {

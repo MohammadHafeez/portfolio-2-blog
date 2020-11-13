@@ -8,7 +8,8 @@ footer{
     color: white;
 
     h2{
-        font-size: clamp(16px, 1.6vw, 20px);
+        font-size: clamp(15px, 1.6vw, 19px);
+        font-family: var(--poppins);
 
         a{
             color: white;
