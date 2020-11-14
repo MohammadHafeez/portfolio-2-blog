@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --lora: "lora", serif;
+  --poppins: "Poppins", sans-serif;
+  --orange: #FF4B36;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fffbf4;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 525px) {
+  body {
+    padding: 0 65px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 0 150px;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+header h1 {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: clamp(20px, 1.5vw, 28px);
+}
+
+header h1 span {
+  color: var(--orange);
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  font-family: var(--lora);
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: clamp(16px, 1.5vw, 20px);
+  color: black;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: clamp(30px, 5.3vw, 100px);
+}
+
+main .blog__header h2 {
+  font-family: var(--poppins);
+  font-size: clamp(34px, 3.3vw, 64px);
+  color: #7f22ba;
+  max-width: 840px;
+  line-height: clamp(40px, 3.6vw, 70px);
+  font-weight: 500;
+}
+
+main .blog__header h4 {
+  font-family: var(--lora);
+  font-size: clamp(19px, 1.57vw, 30px);
+  font-weight: 400;
+}
+
+main .blog__header p {
+  font-family: var(--lora);
+  font-size: 16px;
+}
+
+main .blog__header p span {
+  color: #FF4B36;
+}
+
+main .blog__body {
+  max-width: 840px;
+}
+
+main .blog__body p {
+  margin-top: 35px;
+  font-family: var(--lora);
+  font-weight: 400;
+  font-size: clamp(18px, 1.25vw, 24px);
+}
+
+main .blog__body .image__box {
+  margin-top: 35px;
+}
+
+main .blog__body .image__box img {
+  width: 100%;
+  height: auto;
+}
+
+main .blog__body .grid__image__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-gap: 5px;
+  margin-top: 35px;
+}
+
+main .blog__body .grid__image__box img {
+  width: 100%;
+  height: auto;
+}
+
+main .blog__footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 45px;
+  padding-bottom: 25px;
+}
+
+main .blog__footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FF4B36;
+}
+
+main .blog__footer div img {
+  width: 25px;
+  height: auto;
+}
+
+main .blog__footer div span {
+  margin: 0 15px;
+  font-size: clamp(16px, 1.05vw, 20px);
+}
+
+main .blog__footer .back {
+  justify-self: flex-start;
+}
+
+main .blog__footer .home {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+main .blog__footer .forward {
+  justify-self: flex-end;
+}
+/*# sourceMappingURL=blog.css.map */

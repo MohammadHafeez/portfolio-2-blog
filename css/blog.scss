@@ -1,0 +1,15 @@
+@import "resets";
+@import "header";
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: clamp(30px, 5.3vw, 100px);
+}
+
+@import "blogHeader";
+@import "blogBody";
+@import "blogFooter";
+
+// clmap( 5.3vw, 100px

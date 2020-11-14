@@ -1,0 +1,39 @@
+main{
+
+    .blog__footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        padding-bottom: 25px;
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FF4B36;
+
+            img{
+                width: 25px;
+                height: auto;
+            }
+
+            span{
+                margin: 0 15px;
+                font-size: clamp(16px, 1.05vw, 20px);
+            }
+        }
+
+        .back{
+            justify-self: flex-start;
+        }
+
+        .home{
+            justify-self: center;
+        }
+
+        .forward{
+            justify-self: flex-end;
+        }
+    }
+}
