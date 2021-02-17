@@ -27,6 +27,12 @@ main{
             }
         } 
     }
+
+    h2{
+        font-size: clamp(32px, 1.6vw, 38px);
+        color: var(--dark-green);
+        margin-bottom: -35px;
+    }
 }
 
 @media screen and (min-width: 968px) {
